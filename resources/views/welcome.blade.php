@@ -66,6 +66,15 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
+                <form action="/add">
+                    @csrf
+                    <input type="text" name="company">
+                    <input type="text" name="url">
+                    <input type="text" name="status">
+                    <input type="datetime-local" name="date">
+                    <input type="text" name="memos">
+                    <input type="submit" value="add">
+                </form>
                 <table>
                 <tr>
                     <th>会社名</th>
