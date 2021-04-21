@@ -84,12 +84,13 @@
                     <th>備考・媒体</th>
                 </tr>
                 <tr>
-                    <th>株式会社クリーク・アンド・リバー社</th>
-                    <th><a href="https://www.cri.co.jp/">HP</a></th>
-                    <th>書類選考</th>
-                    <th>4月21日</th>
-                    <th>wantedlly</th>
-                    <th></th>
+                    @foreach($datas as $data)
+                    <th>{{$data->company}}</th>
+                    <th><a href="{{$data->url}}">HP</a></th>
+                    <th>{{$data->status}}</th>
+                    <th>{{$data->date}}</th>
+                    <th>{{$data->memos}}</th>
+                    @endforeach
                 </tr>
                     
                 </table>
