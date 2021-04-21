@@ -66,7 +66,7 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-                <form action="/add">
+                <form action="/add" method="post">
                     @csrf
                     <input type="text" name="company">
                     <input type="text" name="url">
@@ -79,14 +79,17 @@
                 <tr>
                     <th>会社名</th>
                     <th>ホームページ</th>
-                    <th>募集要項</th>
                     <th>状況</th>
+                    <th>面接日時</th>
+                    <th>備考・媒体</th>
                 </tr>
                 <tr>
                     <th>株式会社クリーク・アンド・リバー社</th>
                     <th><a href="https://www.cri.co.jp/">HP</a></th>
+                    <th>書類選考</th>
+                    <th>4月21日</th>
                     <th>wantedlly</th>
-                    <th>書類落選</th>
+                    <th></th>
                 </tr>
                     
                 </table>
