@@ -8,7 +8,7 @@ use App\Schedule;
 class ScheduleController extends Controller
 {
     public function index() {
-        $datas = Schedule::orderBy('date','desc');
+        // $datas = Schedule::orderBy('date','desc');
         return view('welcome');
     }
 
