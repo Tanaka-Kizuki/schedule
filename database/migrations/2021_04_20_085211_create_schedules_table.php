@@ -18,7 +18,7 @@ class CreateSchedulesTable extends Migration
             $table->string("company");
             $table->string("url");
             $table->string("status");
-            $table->datetime("date");
+            $table->string("date");
             $table->string("memos");
             $table->timestamps();
         });
