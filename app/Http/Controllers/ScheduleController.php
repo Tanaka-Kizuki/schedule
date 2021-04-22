@@ -9,7 +9,7 @@ class ScheduleController extends Controller
 {
     public function index() {
         $datas = Schedule::orderBy('date','desc');
-        return view('welcome',['datas'=> $datas]);
+        return view('welcome');
     }
 
     public function create(Request $request) {

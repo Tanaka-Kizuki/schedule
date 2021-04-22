@@ -91,8 +91,7 @@
                     <th>{{$data->date}}</th>
                     <th>{{$data->memos}}</th>
                     @endforeach
-                </tr>
-                    
+                </tr>                    
                 </table>
             </div>
         </div>
