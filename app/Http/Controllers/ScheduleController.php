@@ -8,8 +8,8 @@ use App\Schedule;
 class ScheduleController extends Controller
 {
     public function index() {
-        // $datas = Schedule::orderBy('date','desc');
-        return view('welcome');
+        $datas = Schedule::orderBy('date','desc')->get();
+        return view('welcome',['datas'=>$datas]);
     }
 
     public function create(Request $request) {
