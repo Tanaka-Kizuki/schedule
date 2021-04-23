@@ -17,3 +17,4 @@ Route::get('/','ScheduleController@index');
 Route::post('/add','ScheduleController@create');
 
 Route::get('/show/{id}','ScheduleController@show');
+Route::post('/update','ScheduleController@update');

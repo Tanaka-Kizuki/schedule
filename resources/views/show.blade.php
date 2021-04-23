@@ -8,11 +8,13 @@
 </head>
 <body>
      <form action="/update" method="post">
-          <input type="text" value="{{$form->company}}">
-          <input type="text" value="{{$form->url}}">
-          <input type="text" value="{{$form->status}}">
-          <input type="datetime-local" value="{{$form->date}}">
-          <input type="text" value="{{$form->memos}}">
+     @csrf
+          <input name="id" type="hidden" value="{{$form->id}}">
+          <input name="company" type="text" value="{{$form->company}}">
+          <input name="url" type="text" value="{{$form->url}}">
+          <input name="status" type="text" value="{{$form->status}}">
+          <input name="date" type="datetime-local" value="{{$form->date}}">
+          <input name="memos" type="text" value="{{$form->memos}}">
           <input type="submit" value="update">
      </form>
 </body>

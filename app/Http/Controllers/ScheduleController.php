@@ -29,8 +29,25 @@ class ScheduleController extends Controller
     }
 
     public function show($id) {
-        $form = Schedule::find($id)->first();
+        $form = Schedule::find($id);
         return view('show',['form' => $form]);
+    }
+
+    public function update(Request $request) {
+        $id = $request->id;
+        $request->date = str_replace("T"," ",$request->date);
+        $request->date = $request->date.":00";
+        $schedule = Schedule::find($id);
+        $data = [
+            'company' => $request->company,
+            'url' => $request->url,
+            'status' => $request->status,
+            'date' => $request->date,
+            'memos' => $request->memos
+        ];
+        $schedule->fill($data);
+        $schedule->save();
+        return redirect('/');
     }
 
 
