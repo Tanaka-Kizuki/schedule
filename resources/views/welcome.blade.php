@@ -90,6 +90,7 @@
                     <th>{{$data->status}}</th>
                     <th>{{$data->date}}</th>
                     <th>{{$data->memos}}</th>
+                    <th><a href="/show/{{$data->id}}">update</a></th>
                     </tr>
                     @endforeach                 
                 </table>

@@ -28,5 +28,10 @@ class ScheduleController extends Controller
         return redirect('/');
     }
 
+    public function show($id) {
+        $form = Schedule::find($id)->first();
+        return view('show',['form' => $form]);
+    }
+
 
 }
