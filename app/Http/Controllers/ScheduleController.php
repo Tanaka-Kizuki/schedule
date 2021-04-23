@@ -50,5 +50,10 @@ class ScheduleController extends Controller
         return redirect('/');
     }
 
+    public function delete($id) {
+        $schedule = Schedule::find($id)->delete();
+        return redirect('/');
+    }
+
 
 }

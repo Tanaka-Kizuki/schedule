@@ -18,3 +18,4 @@ Route::post('/add','ScheduleController@create');
 
 Route::get('/show/{id}','ScheduleController@show');
 Route::post('/update','ScheduleController@update');
+Route::get('/delete/{id}','ScheduleController@delete');

@@ -91,6 +91,7 @@
                     <th>{{$data->date}}</th>
                     <th>{{$data->memos}}</th>
                     <th><a href="/show/{{$data->id}}">update</a></th>
+                    <th><a href="/delete/{{$data->id}}">delete</a></th>
                     </tr>
                     @endforeach                 
                 </table>
