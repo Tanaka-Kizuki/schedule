@@ -83,15 +83,15 @@
                     <th>面接日時</th>
                     <th>備考・媒体</th>
                 </tr>
-                <tr>
                     @foreach($datas as $data)
+                    <tr>
                     <th>{{$data->company}}</th>
                     <th><a href="{{$data->url}}">HP</a></th>
                     <th>{{$data->status}}</th>
                     <th>{{$data->date}}</th>
                     <th>{{$data->memos}}</th>
-                    @endforeach
-                </tr>                    
+                    </tr>
+                    @endforeach                 
                 </table>
             </div>
         </div>
