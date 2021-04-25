@@ -19380,6 +19380,8 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./top */ "./resources/js/top.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -19411,6 +19413,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/top.js":
+/*!*****************************!*\
+  !*** ./resources/js/top.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/Kizuki/Desktop/workspace/schedule/resources/js/top.js: Missing semicolon (1:4)\n\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 1 |\u001b[39m \u001b[33mHTML\u001b[39m \u001b[33mSCSS\u001b[39m \u001b[33mJSResult\u001b[39m \u001b[33mSkip\u001b[39m \u001b[33mResults\u001b[39m \u001b[33mIframe\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 2 |\u001b[39m \u001b[33mEDIT\u001b[39m \u001b[33mON\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 |\u001b[39m \u001b[36mvar\u001b[39m $window \u001b[33m=\u001b[39m $(window)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 4 |\u001b[39m \u001b[36mvar\u001b[39m $year \u001b[33m=\u001b[39m $(\u001b[32m'#js-year'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n    at Parser._raise (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:776:17)\n    at Parser.raiseWithData (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:769:17)\n    at Parser.raise (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:737:17)\n    at Parser.semicolon (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:9718:10)\n    at Parser.parseExpressionStatement (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:12804:10)\n    at Parser.parseStatementContent (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:12396:19)\n    at Parser.parseStatement (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:12260:17)\n    at Parser.parseBlockOrModuleBlockBody (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:12846:25)\n    at Parser.parseBlockBody (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:12837:10)\n    at Parser.parseProgram (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:12191:10)\n    at Parser.parseTopLevel (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:12182:25)\n    at Parser.parse (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:13893:10)\n    at parse (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/parser/lib/index.js:13945:38)\n    at parser (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/core/lib/parser/index.js:54:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/core/lib/transformation/normalize-file.js:55:38)\n    at normalizeFile.next (<anonymous>)\n    at run (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/core/lib/transformation/index.js:31:50)\n    at run.next (<anonymous>)\n    at Function.transform (/Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/core/lib/transform.js:19:41)\n    at transform.next (<anonymous>)\n    at step (/Users/Kizuki/Desktop/workspace/schedule/node_modules/gensync/index.js:261:32)\n    at /Users/Kizuki/Desktop/workspace/schedule/node_modules/gensync/index.js:273:13\n    at async.call.result.err.err (/Users/Kizuki/Desktop/workspace/schedule/node_modules/gensync/index.js:223:11)\n    at /Users/Kizuki/Desktop/workspace/schedule/node_modules/gensync/index.js:189:28\n    at /Users/Kizuki/Desktop/workspace/schedule/node_modules/@babel/core/lib/gensync-utils/async.js:62:7\n    at /Users/Kizuki/Desktop/workspace/schedule/node_modules/gensync/index.js:113:33\n    at step (/Users/Kizuki/Desktop/workspace/schedule/node_modules/gensync/index.js:287:14)\n    at /Users/Kizuki/Desktop/workspace/schedule/node_modules/gensync/index.js:273:13\n    at async.call.result.err.err (/Users/Kizuki/Desktop/workspace/schedule/node_modules/gensync/index.js:223:11)");
 
 /***/ }),
 
