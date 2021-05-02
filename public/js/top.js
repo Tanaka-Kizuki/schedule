@@ -13,7 +13,8 @@ $window.on('load',function(){
 });
 
 function calendarBody(year, month, today){
-  var todayYMFlag = today.getFullYear() === year && today.getMonth() === month ? true : false; // 本日の年と月が表示されるカレンダーと同じか判定
+  var todayYMFlag = today.getFullYear() === year && today.getMonth() === month ? true : false; 
+  // 本日の年と月が表示されるカレンダーと同じか判定
   var startDate = new Date(year, month, 1); // その月の最初の日の情報
   var endDate  = new Date(year, month + 1 , 0); // その月の最後の日の情報
   var startDay = startDate.getDay();// その月の最初の日の曜日を取得
@@ -34,7 +35,7 @@ function calendarBody(year, month, today){
       }
       var addClass = todayYMFlag && textDate === today.getDate() ? 'is-today' : '';
       var textTd = textSkip ? '&nbsp;' : textDate++;
-      var td = '<td class="'+addClass+'">'+textTd+'</td>';
+      var td = '<td class="'+addClass+'">'+'<a href="/">'+textTd+'<a>'+'</td>';
       tr += td;
     }
     tr += '</tr>';
