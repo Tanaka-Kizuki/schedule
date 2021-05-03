@@ -38,7 +38,7 @@ function calendarBody(year, month, today){
       if(textTd==='&nbsp;') {
         var td = '<td class="'+addClass+'">'+textTd+'</td>';
       } else {
-        var td = '<td class="'+addClass+'">'+'<a href="/">'+textTd+'<a>'+'</td>';
+        var td = '<td class="'+addClass+'">'+'<a href="/'+textTd+'">'+textTd+'<a>'+'</td>';
       }
       
       tr += td;
