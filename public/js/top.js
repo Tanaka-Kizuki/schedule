@@ -35,7 +35,12 @@ function calendarBody(year, month, today){
       }
       var addClass = todayYMFlag && textDate === today.getDate() ? 'is-today' : '';
       var textTd = textSkip ? '&nbsp;' : textDate++;
-      var td = '<td class="'+addClass+'">'+'<a href="/">'+textTd+'<a>'+'</td>';
+      if(textTd==='&nbsp;') {
+        var td = '<td class="'+addClass+'">'+textTd+'</td>';
+      } else {
+        var td = '<td class="'+addClass+'">'+'<a href="/">'+textTd+'<a>'+'</td>';
+      }
+      
       tr += td;
     }
     tr += '</tr>';
