@@ -35,12 +35,21 @@ function calendarBody(year, month, today){
       }
       var addClass = todayYMFlag && textDate === today.getDate() ? 'is-today' : '';
       var textTd = textSkip ? '&nbsp;' : textDate++;
+      if (month < 10) {
+        linkMonth = '0'+ month;
+        if (textTd < 10) {
+          linkTextTd = '0' + textTd;
+          Link = year+'-'+linkMonth+'-'+linkTextTd;
+        } else {
+          Link = year+'-'+linkMonth+'-'+textTd;
+        }
+      }
+      
       if(textTd==='&nbsp;') {
         var td = '<td class="'+addClass+'">'+textTd+'</td>';
       } else {
-        var td = '<td class="'+addClass+'">'+'<a href="/'+textTd+'">'+textTd+'<a>'+'</td>';
+        var td = '<td class="'+addClass+'">'+'<a href="/'+Link+'">'+textTd+'<a>'+'</td>';
       }
-      
       tr += td;
     }
     tr += '</tr>';
